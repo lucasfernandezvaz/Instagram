@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./img/icon-insta.png" type="instagram_icon">
+    <title> Instagram </title>
+</head>
+
+<body>
+
+    <div class="container-imagens">
+        <img src="./img/celular.png" class="celular">
+        <img src="./img/insta1.png" class="imagem-celular">
+        <img src="./img/insta2.png" class="imagem-celular" id="troca-imagem">
+    </div>
+
+    <div class="container-itens">
+        <div class="container-form">
+            <img src="./img/insta-logo.png" class="insta-logo">
+
+            <input placeholder="Telefone, nome de usuário ou email">
+            <input placeholder="Senha">
+
+            <button> Entrar </button>
+
+            <div class="separator">
+                <div class="line">
+                    <span> <b> OU </b> </span>
+                </div>
+            </div>
+        <div>
+            <img src="./img/logo_facebook.png" class="face-logo">
+        </div>
+        <a class="login-facebook">Entrar com o Facebook</a>
+        <a class="esqueceu-senha">Esqueceu a senha?</a>
+    </div>
+
+        <div class="container-cadastro">
+            <p class="paragrafo-conta"> Não tenho uma conta? </p> <a class="link-cadastro"> Cadastre-se </a>
+        </div>
+
+        <p class="paragrafo-app"> Obtenha o aplicativo. </p>
+
+        <div class="container-app">
+            <img src="./img/google.png" alt="logo do google" class="logo-app">
+            <img src="./img/microsoft.png" alt="logo do microsoft" class="logo-app">
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <ul id="footer-links">
+                <li><a href="#">Meta</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Carreiras</a></li>
+                <li><a href="#">Ajuda</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">Privacidade</a></li>
+                <li><a href="#">Termos</a></li>
+                <li><a href="#">Localizações</a></li>
+                <li><a href="#">Instagram Lite</a></li>
+                <li><a href="#">Threads</a></li>
+                <li><a href="#">Carregamento de contatos e não usuários</a></li>
+                <li><a href="#">Meta Verified</a></li>
+            </ul>
+        </nav>
+        <p id="copyright">&copy;2024 Instagram from Meta</p>
+    </footer>
+</body>
+
+<script>
+    let imagem = document.getElementById("troca-imagem")
+
+    function trocaImagem() {
+
+        if (imagem.style.opacity == 0) {
+            imagem.style.opacity = 1
+        }
+        else {
+            imagem.style.opacity = 0
+        }
+    }
+
+    setInterval(function () {
+        trocaImagem()
+    }, 4000);
+
+</script>
+
+
+
+</html>
